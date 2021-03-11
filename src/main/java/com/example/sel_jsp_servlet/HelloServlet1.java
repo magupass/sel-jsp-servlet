@@ -11,7 +11,7 @@ public class HelloServlet1 extends HttpServlet {
 
     private String message1;
 
-    public void init() { message1 = "hello servlet"; }
+    public void init() { message1 = "hello servlet1"; }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,7 +20,7 @@ public class HelloServlet1 extends HttpServlet {
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + message1 + "</h1>");
+        out.println("<h3>" + message1 + "</h3>");
         out.println("</body></html>");
     }
 
